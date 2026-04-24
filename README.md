@@ -29,15 +29,12 @@ In addition to the required terminal script, a simple Streamlit web interface is
    ```
 
 ### 3. Configuration
+
 1. Create a `.env` file in the root directory.
-2. Copy the contents of `env_example.txt` into `.env`.
-3. Add your API key:
-   ```env
-   Create a .env file in the root directory and add:
+2. Add your Gemini API key inside the file:
 
+```env
 GOOGLE_API_KEY=your_api_key_here
-   ```
-
 ## How to Run
 
 ### Option A: Terminal Script (main.py)

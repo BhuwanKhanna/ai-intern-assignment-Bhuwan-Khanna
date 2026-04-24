@@ -1,10 +1,10 @@
-# Gemini Apex AI Suite
+# AI-INTERN-ASSIGNMENT-BHUWAN-KHANNA
 
-A dual-interface AI assistant powered by Google's Gemini LLM. This project includes both a robust command-line tool and a premium web-based chat interface.
+A dual-interface AI assistant powered by Google's Gemini LLM. This project includes both a robust command-line tool and a web-based chat interface.
 
 ## Features
 - **Terminal Interface**: Fast, efficient command-line interaction.
-- **Web Interface**: A premium "Glassmorphism" styled dashboard with chat history.
+- **Web Interface**:    Dashboard with chat history.
 - **Modern LLM**: Powered by the high-speed `gemini-flash-latest` model.
 - **Secure Config**: Environment-based API key management.
 

@@ -1,16 +1,17 @@
 # AI-INTERN-ASSIGNMENT-BHUWAN-KHANNA
 
-A dual-interface AI assistant powered by Google's Gemini LLM. This project includes both a robust command-line tool and a web-based chat interface.
+This project is a Python-based AI assistant that takes a user’s question as input, sends it to the Google Gemini API, and prints the response in the console.
+In addition to the required terminal script, a simple Streamlit web interface is also included as an optional extension.
 
 ## Features
-- **Terminal Interface**: Fast, efficient command-line interaction.
-- **Web Interface**:    Dashboard with chat history.
-- **Modern LLM**: Powered by the high-speed `gemini-flash-latest` model.
-- **Secure Config**: Environment-based API key management.
+- Command-line interface for quick interaction
+- Integration with Google Gemini (gemini-1.5-flash)
+- Optional Streamlit-based web interface
+- Environment-based API key configuration
 
 ## Project Structure
 - `main.py`: The core terminal-based query script.
-- `app.py`: The premium Streamlit web interface.
+- `app.py`: Optional Streamlit UI.
 - `requirements.txt`: Project dependencies.
 - `env_example.txt`: Template for API configuration.
 
@@ -32,7 +33,9 @@ A dual-interface AI assistant powered by Google's Gemini LLM. This project inclu
 2. Copy the contents of `env_example.txt` into `.env`.
 3. Add your API key:
    ```env
-   GEMINI_API_KEY=your_key_here
+   Create a .env file in the root directory and add:
+
+GOOGLE_API_KEY=your_api_key_here
    ```
 
 ## How to Run
@@ -44,10 +47,10 @@ python main.py
 ```
 
 ### Option B: Web Interface (app.py)
-Run the premium web dashboard:
+Run the  web dashboard:
 ```bash
 python -m streamlit run app.py
 ```
 
 ## Why Gemini?
-We chose the Gemini API for its exceptional speed, high rate limits on the free tier, and the state-of-the-art reasoning capabilities of the Flash models.
+The Gemini API was chosen because it offers a generous free tier, fast response times with the Flash model, and an easy-to-use Python SDK, making it well-suited for lightweight AI applications.

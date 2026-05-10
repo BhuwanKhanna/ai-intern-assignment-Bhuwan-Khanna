@@ -1,57 +1,52 @@
-Research Assistant
+# Research Assistant
 
-An AI-powered Research Assistant that leverages the Gemini API along with Model Context Protocol (MCP) integration to generate structured, context-aware, and accurate research summaries on user-defined topics.
+An AI-Powered Research Assistant that uses the Gemini API and MCP integration to generate structured and accurate research summaries on user-provided topics. The system fetches real-time contextual information through MCP servers and processes it  using AI. The assistant also supports exporting research reports into .PDF and .TXT formats for documentation and sharing.
 
-The system retrieves real-time contextual information through MCP servers and processes the data using AI-driven intelligence synthesis powered by Gemini. It also supports exporting generated research reports into .PDF and .TXT formats for documentation, sharing, and archival purposes.
+## Key Features
+*   **AI-Powered Research Generation**: Automated multi-source research synthesis using Gemini AI.
+*   **Real Time Context Retrieval**: Live contextual data integration through MCP servers.
+*   **Export Support**: Generate downloadable research reports in PDF and TXT formats.
+*   **Modern Workspace UI**: High-fidelity and responsive user interface for smooth interaction.
+*   **Structured Research Output** : Cleanly formatted summaries with organized sections and insights.
 
-Key Features
-AI-Powered Research Generation
-Automated multi-source research synthesis using Gemini AI.
-Real-Time Context Retrieval
-Live contextual data integration through MCP servers.
-Export Support
-Generate downloadable research reports in PDF and TXT formats.
-Modern Workspace UI
-High-fidelity and responsive user interface for smooth interaction.
-Structured Research Output
-Cleanly formatted summaries with organized sections and insights.
-Tech Stack
+## Tech Stack
 Python
 FastAPI
 Gemini API
 MCP (Model Context Protocol)
 HTML, CSS, JavaScript
-Prerequisites
-Python 3.10 or higher
-Google Gemini API Key
-Installation
-Clone the Repository
-git clone https://github.com/your-username/research-assistant.git
-Install Dependencies
-pip install -r backend/requirements.txt
-Configure Environment Variables
 
-Create a .env file in the root directory and add:
+## Prerequisites
+*   Python 3.10 or higher
+*   Google Gemini API Key
 
-GEMINI_API_KEY=your_actual_key_here
-Running the Application
-Start Backend Server
-python -m uvicorn backend.main:app --reload
-Launch Frontend
+## Installation
 
-Open:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/research-assistant.git
+   ```
 
-frontend/index.html
+2. Install the required dependencies:
+   ```bash
+   pip install -r backend/requirements.txt
+   ```
 
-in any web browser.
+3. Configure environment variables:
+   *   Create a `.env` file in the root directory.
+   *   Add your API key: `GEMINI_API_KEY=your_actual_key_here`
 
-Project Structure
-backend/             # API server, AI agent logic, MCP tools
-frontend/            # Frontend UI assets (HTML, CSS, JavaScript)
-research_exports/    # Exported PDF and TXT research reports
-Future Enhancements
-Multi-agent research pipelines
-Citation and reference generation
-Research visualization dashboards
-Cloud deployment support
-User authentication and saved workspaces
+## Running the Application
+
+1. Start the backend server:
+   ```bash
+   python -m uvicorn backend.main:app --reload
+   ```
+
+2. Launch the interface:
+   *   Open `frontend/index.html` in any modern web browser.
+
+## Project Structure
+*   `backend/`: API server, research agent logic, and MCP tools.
+*   `frontend/`: Institutional user interface assets (HTML, CSS, JS).
+*   `research_exports/`: Local directory for saved research reports.

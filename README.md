@@ -1,53 +1,57 @@
-# AI-INTERN-ASSIGNMENT-BHUWAN-KHANNA
+Research Assistant
 
-This project is a Python-based AI assistant that takes a user’s question as input, sends it to the Google Gemini API, and prints the response in the console.
-In addition to the required terminal script, a simple Streamlit web interface is also included as an optional extension.
+An AI-powered Research Assistant that leverages the Gemini API along with Model Context Protocol (MCP) integration to generate structured, context-aware, and accurate research summaries on user-defined topics.
 
-## Features
-- Command-line interface for quick interaction
-- Integration with Google Gemini (gemini-1.5-flash)
-- Optional Streamlit-based web interface
-- Environment-based API key configuration
+The system retrieves real-time contextual information through MCP servers and processes the data using AI-driven intelligence synthesis powered by Gemini. It also supports exporting generated research reports into .PDF and .TXT formats for documentation, sharing, and archival purposes.
 
-## Project Structure
-- `main.py`: The core terminal-based query script.
-- `app.py`: Optional Streamlit UI.
-- `requirements.txt`: Project dependencies.
-- `env_example.txt`: Template for API configuration.
+Key Features
+AI-Powered Research Generation
+Automated multi-source research synthesis using Gemini AI.
+Real-Time Context Retrieval
+Live contextual data integration through MCP servers.
+Export Support
+Generate downloadable research reports in PDF and TXT formats.
+Modern Workspace UI
+High-fidelity and responsive user interface for smooth interaction.
+Structured Research Output
+Cleanly formatted summaries with organized sections and insights.
+Tech Stack
+Python
+FastAPI
+Gemini API
+MCP (Model Context Protocol)
+HTML, CSS, JavaScript
+Prerequisites
+Python 3.10 or higher
+Google Gemini API Key
+Installation
+Clone the Repository
+git clone https://github.com/your-username/research-assistant.git
+Install Dependencies
+pip install -r backend/requirements.txt
+Configure Environment Variables
 
-## Setup Instructions
+Create a .env file in the root directory and add:
 
-### 1. Prerequisites
-- Python 3.9+
-- A Gemini API Key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+GEMINI_API_KEY=your_actual_key_here
+Running the Application
+Start Backend Server
+python -m uvicorn backend.main:app --reload
+Launch Frontend
 
-### 2. Installation
-1. Clone the repository.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Open:
 
-### 3. Configuration
+frontend/index.html
 
-1. Create a `.env` file in the root directory.
-2. Add your Gemini API key inside the file:
+in any web browser.
 
-```env
-GOOGLE_API_KEY=your_api_key_here
-## How to Run
-
-### Option A: Terminal Script (main.py)
-Run the classic terminal interface:
-```bash
-python main.py
-```
-
-### Option B: Web Interface (app.py)
-Run the  web dashboard:
-```bash
-python -m streamlit run app.py
-```
-
-## Why Gemini?
-The Gemini API was chosen because it offers a generous free tier, fast response times with the Flash model, and an easy-to-use Python SDK, making it well-suited for lightweight AI applications.
+Project Structure
+backend/             # API server, AI agent logic, MCP tools
+frontend/            # Frontend UI assets (HTML, CSS, JavaScript)
+research_exports/    # Exported PDF and TXT research reports
+Future Enhancements
+Multi-agent research pipelines
+Citation and reference generation
+Research visualization dashboards
+Cloud deployment support
+User authentication and saved workspaces
